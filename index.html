@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javaScript/home3.js"></script>
+    <title>Assignment - Week 3</title>
+    <link rel="icon" href="./img/tw.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <header id="navLeft">
+            My website
+        </header>
+        <!-- 右上角的選單 -->
+        <header id="navRight">
+            <label id="hamburg" onclick="navSwitch()">☰</label>
+            <!-- =====小螢幕的漢堡圖===== -->
+            <ul id="switchLi">
+                <li> Item1 </li>
+                <li> Item2 </li>
+                <li> Item3 </li>
+                <li> Item4 </li>
+            </ul>
+        </header>
+    </nav>
+    <br>
+    <!-- ========歡迎台灣的DIV========== -->
+    <script>
+        window.onload = welcomeDiv();
+    </script>
+
+    <body>
+        <!-- ========建立全部DIV======== -->
+        <main id="viewPic">
+            <script>
+                window.onload = presetDiv();
+            </script>
+        </main>
+        <!-- =====載入更多的按鈕====== -->
+        <button id='wantMore' onclick="morDiv()">按 我 載 更 多</button>
+    </body>
+
+</html>

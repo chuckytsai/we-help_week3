@@ -1,0 +1,275 @@
+/* NAVBAR */
+
+nav {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(3, 29, 16);
+    line-height: -20%;
+}
+
+@media(max-width:599px) {
+    nav {
+        height: 6px;
+    }
+}
+
+
+/* NAV左側的My website */
+
+#navLeft {
+    position: fixed;
+    float: left;
+    padding-left: 0.3%;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(243, 177, 154);
+}
+
+@media(max-width: 599px) {
+    #navLeft {
+        margin-bottom: 1%;
+    }
+}
+
+li {
+    margin-right: 5px;
+}
+
+
+/* NAV右側的Item */
+
+#navRight {
+    position: fixed;
+    float: right;
+    right: 0;
+    padding-right: 0.3%;
+}
+
+
+/* NAV右側的漢堡圖案樣式以及預設隱藏 */
+
+#hamburg {
+    float: right;
+    display: none;
+    background-color: rgb(190, 184, 184);
+}
+
+
+/* NAV右側的Item縮小至599px以下呼叫出漢堡圖案 */
+
+@media(max-width: 599px) {
+    #hamburg {
+        margin-top: 2%;
+        display: block;
+        width: 35px;
+        margin-right: 5%;
+        padding-left: 45%;
+    }
+}
+
+ul {
+    margin-top: -0.01%;
+}
+
+@media(max-width: 599px) {
+    ul {
+        float: left;
+        display: none;
+        margin-right: -20%;
+        position: absolute;
+        top: 28.5px;
+        right: 20%;
+    }
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+@media(max-width: 599px) {
+    li {
+        font-size: 20px;
+        float: none;
+        margin-bottom: 3%;
+        text-align: left;
+        background-color: rgb(255, 249, 249, 0.5);
+    }
+}
+
+li:hover {
+    border-radius: 20%;
+    background-color: rgb(248, 216, 168, 0.8);
+    font-size: 21px;
+    text-shadow: 0.05em 0.1em white;
+    cursor: pointer;
+}
+
+
+/* 網頁背景 */
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    font-family: Arial rgb(218, 219, 141);
+    background-color: rgba(210, 241, 211, 0.3);
+}
+
+
+/* 中間wellcome樣式 */
+
+#welcome {
+    font-size: 40px;
+    text-align: center;
+    line-height: 300px;
+    font-family: fantasy;
+    margin-top: 0.5%;
+    width: 100%;
+    color: rgb(15, 9, 32);
+    text-shadow: 0.05em 0.05em rgb(253, 246, 239);
+    height: 300px;
+    background-image: url(../img/miaolihiongqien.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media(max-width: 1199px) {
+    #welcome {
+        padding-top: 15%;
+        line-height: 100px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 599px) {
+    #welcome {
+        padding-top: 10%;
+        line-height: 50px;
+        height: 100px;
+    }
+}
+
+
+/* 風景圖片區塊 */
+
+#viewPic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 1200px;
+}
+
+@media(max-width: 1199px) {
+    #viewPic {
+        width: 95%;
+    }
+}
+
+
+/* 風景照 */
+
+.stills {
+    margin: 0.2%;
+    margin-bottom: -2%;
+}
+
+@media(max-width: 1199px) {
+    .stills {
+        width: 45%;
+        margin-bottom: 0%;
+    }
+}
+
+@media(max-width: 599px) {
+    .stills {
+        width: 90%;
+    }
+}
+
+img {
+    width: 285px;
+    height: 150px;
+}
+
+@media(max-width: 1199px) {
+    img {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+
+/* 名稱 */
+
+.name {
+    background-color: rgb(155, 131, 87);
+    color: rgba(246, 252, 243, 0.8);
+    font-family: Courier;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -1%;
+    width: 285px;
+    height: 30px;
+    overflow-x: auto;
+    border-radius: 5%;
+    /* display: none; */
+}
+
+::-webkit-scrollbar {
+    /*隱藏滾輪*/
+    display: none;
+}
+
+@media(max-width: 1199px) {
+    .name {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 0.5%;
+    }
+}
+
+
+/* 按下後更多的Div */
+
+#wantMore {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    text-align: center;
+    padding-top: 0.4%;
+    font-size: 22px;
+    font-weight: 1000;
+    color: rgba(246, 252, 243, 0.8);
+    background-color: rgb(155, 131, 87);
+    cursor: pointer;
+    border-radius: 5% 3% 2% 5%;
+    outline: none;
+}
+
+@media(max-width: 1199px) {
+    #wantMore {
+        margin-top: 3%;
+        width: 500px;
+        padding-top: 1%;
+    }
+}
+
+@media(max-width: 1199px) {
+    #wantMore {
+        margin-top: 3%;
+        width: 350px;
+        padding-top: 1%;
+    }
+}
